@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit_button</title>
+    <style>
+        .button {
+            position: relative;
+            width: 70px;
+            height: 30px;
+            font-size: 10px;
+            background-color: #202231;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: width .5s;
+            border-radius: .5s;
+            display: block;
+            margin: 100px auto;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .button *{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        transition: opacity .25s;
+        
+    }
+
+        .icon {
+            opacity: 0;
+        }
+
+        .button:focus {
+            width: 30px;
+            background-color: #44c08a;
+            border-radius: 50%;
+            
+        }
+
+        .button:focus .text{
+            opacity: 0;
+        }
+        
+        .button:focus .icon{
+            opacity: 1;
+            transition-delay: .2s;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <button class="button">
+        <span class="text">Submit</span>
+        <i class="icon">&#10003;</i>
+    </button>
+
+</body>
+
+</html>

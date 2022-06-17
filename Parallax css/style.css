@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+
+}
+
+.wrapper{
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    perspective: 10px;          /* main very much important */
+    
+}
+
+header{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    transform-style: preserve-3d;  /* main very much important */
+    z-index: -1;
+}
+
+/* To get the image fit to the screen */
+.background{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+    transform: translateZ(-10px) scale(2);  /* main (Important )*/
+    
+
+}
+
+.title{
+    font-size: 7rem;
+    color: white;
+    text-shadow: 0 0 5px black;
+}
+
+section{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2rem;
+    padding: 2rem;
+    background-color: #333;
+    color: white;
+}
+

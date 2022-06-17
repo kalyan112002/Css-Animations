@@ -1,0 +1,30 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.card{
+    background: rgba(251, 210, 139, 0.459);
+    backdrop-filter: blur(4px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 220, 198, 0.1);
+    padding: 30px;
+    width: 12rem;
+    height: 15rem;
+    position: relative;
+}
+
+.circle{
+    position: absolute;
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+    background: rgb(3, 26, 33);
+    transform: translate(-8rem,9rem);
+}
+.circle:nth-child(2){
+    transform: translate(8rem,-9rem);
+    background: rgb(8, 103, 167);
+}
